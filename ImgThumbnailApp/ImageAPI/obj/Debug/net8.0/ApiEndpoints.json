@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "ImageAPI.Controllers.ImageController",
+    "Method": "GetUserImages",
+    "RelativePath": "api/Image",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ImageAPI.Controllers.ImageController",
+    "Method": "GetUploadUrl",
+    "RelativePath": "api/Image/upload-request",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ImageAPI.Core.Application.DTOs.UploadRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

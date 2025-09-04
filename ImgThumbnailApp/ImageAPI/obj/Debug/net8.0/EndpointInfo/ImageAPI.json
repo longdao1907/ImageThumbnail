@@ -1,0 +1,81 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "ImageAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Image/upload-request": {
+      "post": {
+        "tags": [
+          "Image"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UploadRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UploadRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UploadRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Image": {
+      "get": {
+        "tags": [
+          "Image"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "UploadRequestDto": {
+        "required": [
+          "contentType",
+          "fileName"
+        ],
+        "type": "object",
+        "properties": {
+          "fileName": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "contentType": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "fileSize": {
+            "maximum": 52428800,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
