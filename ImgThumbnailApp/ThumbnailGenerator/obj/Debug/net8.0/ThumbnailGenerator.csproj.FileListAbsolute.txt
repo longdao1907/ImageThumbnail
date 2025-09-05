@@ -1,0 +1,9 @@
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\obj\Debug\net8.0\ThumbnailGenerator.csproj.AssemblyReference.cache
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\obj\Debug\net8.0\ThumbnailGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\obj\Debug\net8.0\ThumbnailGenerator.AssemblyInfoInputs.cache
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\obj\Debug\net8.0\ThumbnailGenerator.AssemblyInfo.cs
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\obj\Debug\net8.0\ThumbnailGenerator.csproj.CoreCompileInputs.cache
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\obj\Debug\net8.0\ThumbnailGenerator.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\obj\Debug\net8.0\ThumbnailGenerator.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\obj\Debug\net8.0\ThumbnailGenerator.sourcelink.json
