@@ -6,6 +6,11 @@
         "Path": "ImageAPI\\ImageAPI.csproj",
         "Action": "Start",
         "DebugTarget": "https"
+      },
+      {
+        "Path": "AuthAPI\\AuthAPI.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
       }
     ]
   }

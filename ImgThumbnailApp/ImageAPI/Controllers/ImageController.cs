@@ -7,7 +7,7 @@ using System.Security.Claims;
 namespace ImageAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/Image")]
     [Authorize] // Protect all endpoints in this controller
     public class ImageController : ControllerBase
     {
