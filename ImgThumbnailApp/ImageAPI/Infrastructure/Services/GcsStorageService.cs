@@ -1,6 +1,8 @@
-﻿using Google.Cloud.Storage.V1;
-using Google.Apis.Auth.OAuth2;
+﻿using Google.Apis.Auth.OAuth2;
+using Google.Cloud.Storage.V1;
 using ImageAPI.Core.Application.Interfaces;
+using Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos;
+using System.Diagnostics;
 
 namespace ImageAPI.Infrastructure.Services
 {
@@ -8,14 +10,17 @@ namespace ImageAPI.Infrastructure.Services
     {
         private readonly UrlSigner _urlSigner;
         private readonly string _bucketName;
+        private readonly string _credentialsPath;
 
         public GcsStorageService(IConfiguration configuration)
         {
             _bucketName = configuration["Gcp:BucketName"] ?? throw new ArgumentNullException("GCP BucketName not configured.");
+            _credentialsPath = configuration["Gcp:ServiceAccountCredentialsPath"] ?? throw new ArgumentNullException("GCP ServiceAccountCredentialsPath not configured.");
 
             //Get Application Default Credentials
-            var credentials = GoogleCredential.GetApplicationDefault();
+            var credentials = GoogleCredential.FromFile(_credentialsPath);
 
+            
             // This implicitly uses Application Default Credentials when running on Google Cloud.
             // For local development, ensure you have authenticated via 'gcloud auth application-default login'.
             _urlSigner =  UrlSigner.FromCredential(credentials);

@@ -11,6 +11,11 @@
         "Path": "AuthAPI\\AuthAPI.csproj",
         "Action": "Start",
         "DebugTarget": "https"
+      },
+      {
+        "Path": "ThumbnailGenerator\\ThumbnailGenerator.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
       }
     ]
   }

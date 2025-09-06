@@ -26,14 +26,22 @@ namespace ImageAPI.Infrastructure.Persistence.Repositories
 
         public async Task<IEnumerable<ImageMetadata>> GetByUserIdAsync(string userId)
         {
-            return await _context.ImageMetadata
-                .Where(m => m.UserId == userId)
-                .ToListAsync();
+            return await _context.ImageMetadata.
+                Where(i => i.UserId == userId).ToListAsync();
         }
+
+        public async Task<IEnumerable<ImageMetadata>> GetImages()
+        {
+            return await _context.ImageMetadata.ToListAsync();
+            
+        }
+
         public async Task UpdateAsync(ImageMetadata metadata)
         {
             _context.ImageMetadata.Update(metadata);
             await _context.SaveChangesAsync();
         }
+
+        
     }
 }

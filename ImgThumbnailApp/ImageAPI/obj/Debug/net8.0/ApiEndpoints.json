@@ -1,17 +1,73 @@
 [
   {
     "ContainingType": "ImageAPI.Controllers.ImageController",
-    "Method": "GetUserImages",
-    "RelativePath": "api/Image",
+    "Method": "GetImages",
+    "RelativePath": "api/Image/get-images",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "ImageAPI.Core.Application.DTOs.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "ImageAPI.Controllers.ImageController",
-    "Method": "GetUploadUrl",
+    "Method": "GetUserImages",
+    "RelativePath": "api/Image/get-images-by-user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "ImageAPI.Core.Application.DTOs.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ImageAPI.Controllers.ImageController",
+    "Method": "Put",
+    "RelativePath": "api/Image/update-thumbnail-status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ImageAPI.Core.Application.DTOs.ImageMetadataDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ImageAPI.Core.Application.DTOs.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ImageAPI.Controllers.ImageController",
+    "Method": "Post",
     "RelativePath": "api/Image/upload-request",
     "HttpMethod": "POST",
     "IsController": true,
@@ -19,10 +75,20 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "ImageAPI.Core.Application.DTOs.UploadRequestDto",
+        "Type": "ImageAPI.Core.Application.DTOs.ImageMetadataDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "ImageAPI.Core.Application.DTOs.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

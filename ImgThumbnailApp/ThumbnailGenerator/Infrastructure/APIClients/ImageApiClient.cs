@@ -22,7 +22,7 @@ namespace ThumbnailGenerator.Infrastructure.APIClients
             var content = new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json");
 
             // Assumes an endpoint like: PATCH /api/images/{imageId}/thumbnail-status
-            var response = await _httpClient.PatchAsync($"api/images/{imageId}/thumbnail-status", content);
+            var response = await _httpClient.PatchAsync($"api/image/{imageId}/thumbnail-status", content);
 
             response.EnsureSuccessStatusCode();
         }

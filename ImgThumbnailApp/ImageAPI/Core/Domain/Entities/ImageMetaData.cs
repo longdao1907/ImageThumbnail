@@ -1,4 +1,6 @@
 ﻿using ImageAPI.Core.Domain.Enum;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace ImageAPI.Core.Domain.Entities
 {
@@ -7,12 +9,17 @@ namespace ImageAPI.Core.Domain.Entities
     /// </summary>
     public class ImageMetadata
     {
+        [Key]
+        [Required]
         public Guid Id { get; set; }
-        public string FileName { get; set; } = string.Empty;
+        [Required]
+        public string FileName { get; set; } = string.Empty ;
         public long FileSize { get; set; }
         public string ContentType { get; set; } = string.Empty;
+        [Required]
         public DateTime UploadDate { get; set; }
-        public ThumbnailStatus Status { get; set; }
+     
+        public string? Status { get; set; }
 
         /// <summary>
         /// The ID of the user who uploaded the image.

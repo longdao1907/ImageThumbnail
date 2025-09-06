@@ -1,4 +1,3 @@
-using CloudNative.CloudEvents;
 using ThumbnailGenerator.Core.Application.Interfaces;
 using ThumbnailGenerator.Core.Application.Services;
 using ThumbnailGenerator.Infrastructure.APIClients;
@@ -28,8 +27,7 @@ builder.Services.AddHttpClient<IImageApiClient, ImageApiClient>(client =>
 });
 
 builder.Services.AddControllers();
-// Add the CloudEvents middleware to automatically parse incoming requests
-builder.Services.AddCloudEvents();
+// Add the CloudEvents middleware to automatically parse incoming request
 
 
 builder.Services.AddEndpointsApiExplorer();
@@ -47,7 +45,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 // The CloudEvents middleware needs to be registered before routing
-app.UseCloudEvents();
+//app.UseCloudEvents();
 
 app.MapControllers();
 
