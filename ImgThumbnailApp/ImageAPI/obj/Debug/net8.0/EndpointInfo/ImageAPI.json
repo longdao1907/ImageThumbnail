@@ -12,19 +12,80 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/ImageMetadataDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ImageMetadataDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ImageMetadataDto"
+                "required": [
+                  "ContentType"
+                ],
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "FileName": {
+                    "type": "string"
+                  },
+                  "FileSize": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "UploadDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "Status": {
+                    "type": "string"
+                  },
+                  "ThumbnailUrl": {
+                    "type": "string"
+                  },
+                  "UserId": {
+                    "type": "string"
+                  },
+                  "ContentType": {
+                    "type": "string"
+                  },
+                  "GcsObjectName": {
+                    "type": "string"
+                  },
+                  "OriginalImageFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "FileName": {
+                  "style": "form"
+                },
+                "FileSize": {
+                  "style": "form"
+                },
+                "UploadDate": {
+                  "style": "form"
+                },
+                "Status": {
+                  "style": "form"
+                },
+                "ThumbnailUrl": {
+                  "style": "form"
+                },
+                "UserId": {
+                  "style": "form"
+                },
+                "ContentType": {
+                  "style": "form"
+                },
+                "GcsObjectName": {
+                  "style": "form"
+                },
+                "OriginalImageFile": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -53,10 +114,20 @@
         }
       }
     },
-    "/api/Image/get-images-by-user": {
+    "/api/Image/get-images-by-user/{userId}": {
       "get": {
         "tags": [
           "Image"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -111,7 +182,7 @@
         }
       }
     },
-    "/api/Image/update-thumbnail-status": {
+    "/api/Image/update-image": {
       "put": {
         "tags": [
           "Image"
@@ -202,6 +273,11 @@
           },
           "gcsObjectName": {
             "type": "string",
+            "nullable": true
+          },
+          "originalImageFile": {
+            "type": "string",
+            "format": "binary",
             "nullable": true
           }
         },

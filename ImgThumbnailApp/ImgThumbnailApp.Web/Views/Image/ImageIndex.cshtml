@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ImageMetadataDto>
+﻿<div class="card shadow border-0 mt-4">
+	<div class="card-header bg-secondary bg-gradient ml-0 py-3">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h1 class="text-white">Images List</h1>
+			</div>
+		</div>
+	</div>
+	<div class="card-body p-4">
+		<div class="row pb-3">
+			<div class="col-6">
+			</div>
+			<div class="col-6 text-end">
+				<a asp-action="Upload" class="btn btn-outline-primary"><i class="bi bi-plus-square"></i> Upload New Image</a>
+
+			</div>
+		</div>
+		<table class="table">
+			<thead>
+				<tr>
+					
+					<th>
+						File Name
+					</th>
+					<th>
+						File Size
+					</th>
+					<th>
+						Upload Date
+					</th>
+					<th>
+						Thumbnail Status
+					</th>
+					<th>
+						Thumbnail Download
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model)
+				{
+				<tr>
+					<td> @item.FileName
+					</td>
+					<td> @item.FileSize
+					</td>
+					<td>
+                            @item.UploadDate.ToString("yyyy-MM-dd HH:mm:ss")
+					</td>
+					<td>	
+						@item.Status
+					</td>
+					<td>
+						@if(item.Status == "Completed")
+						{
+							<a asp-action="DownloadThumbnail" asp-route-id="@item.Id" class="btn btn-outline-success"><i class="bi bi-download"></i> Download</a>
+                            }	
+					</td>
+				</tr>
+				}
+			</tbody>
+		</table>
+
+	</div>
+
+</div>

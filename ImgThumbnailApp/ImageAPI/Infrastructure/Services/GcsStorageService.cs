@@ -11,12 +11,14 @@ namespace ImageAPI.Infrastructure.Services
         private readonly UrlSigner _urlSigner;
         private readonly string _bucketName;
         private readonly string _credentialsPath;
+        private readonly string _folderOriginalImage;
+        private readonly StorageClient _storageClient;
 
         public GcsStorageService(IConfiguration configuration)
         {
             _bucketName = configuration["Gcp:BucketName"] ?? throw new ArgumentNullException("GCP BucketName not configured.");
             _credentialsPath = configuration["Gcp:ServiceAccountCredentialsPath"] ?? throw new ArgumentNullException("GCP ServiceAccountCredentialsPath not configured.");
-
+            _folderOriginalImage = configuration["Gcp:OriginalImageFolder"] ?? throw new ArgumentNullException("GCP Folder Image not configured.");
             //Get Application Default Credentials
             var credentials = GoogleCredential.FromFile(_credentialsPath);
 
@@ -24,7 +26,10 @@ namespace ImageAPI.Infrastructure.Services
             // This implicitly uses Application Default Credentials when running on Google Cloud.
             // For local development, ensure you have authenticated via 'gcloud auth application-default login'.
             _urlSigner =  UrlSigner.FromCredential(credentials);
+            _storageClient = StorageClient.Create(credentials);
         }
+
+
 
         public async Task<string> GenerateUploadUrlAsync(string objectName, string contentType)
         {
@@ -38,6 +43,20 @@ namespace ImageAPI.Infrastructure.Services
                 });
 
             return await _urlSigner.SignAsync(request, options);
+        }
+
+        public async Task<string> UploadFileAsync(string objectName, Stream source, string contentType)
+        {
+            objectName = _folderOriginalImage + objectName;
+            var uploaded = await _storageClient.UploadObjectAsync(
+               _bucketName,
+               objectName,
+               contentType,
+               source);
+
+            // Public URL pattern (works with PublicRead)
+            return $"https://storage.googleapis.com/{_bucketName}/{objectName}";
+            // Or: return uploaded.MediaLink; (requires auth sometimes)
         }
     }
 }

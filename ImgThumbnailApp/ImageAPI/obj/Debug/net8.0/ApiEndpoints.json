@@ -22,11 +22,17 @@
   {
     "ContainingType": "ImageAPI.Controllers.ImageController",
     "Method": "GetUserImages",
-    "RelativePath": "api/Image/get-images-by-user",
+    "RelativePath": "api/Image/get-images-by-user/{userId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "ImageAPI.Core.Application.DTOs.ResponseDto",
@@ -42,7 +48,7 @@
   {
     "ContainingType": "ImageAPI.Controllers.ImageController",
     "Method": "Put",
-    "RelativePath": "api/Image/update-thumbnail-status",
+    "RelativePath": "api/Image/update-image",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -74,9 +80,54 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "ImageAPI.Core.Application.DTOs.ImageMetadataDto",
-        "IsRequired": true
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileSize",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "UploadDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ThumbnailUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "GcsObjectName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OriginalImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [

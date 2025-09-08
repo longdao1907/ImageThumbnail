@@ -24,7 +24,7 @@ namespace ImageAPI.Core.Domain.Entities
         /// <summary>
         /// The ID of the user who uploaded the image.
         /// </summary>
-        public string UserId { get; set; } = string.Empty;
+        public string? UserId { get; set; } = string.Empty;
 
         /// <summary>
         /// The unique object name in the Google Cloud Storage bucket.
@@ -35,5 +35,6 @@ namespace ImageAPI.Core.Domain.Entities
         /// Public URL to the generated thumbnail.
         /// </summary>
         public string? ThumbnailUrl { get; set; }
+
     }
 }

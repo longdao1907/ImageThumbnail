@@ -11,6 +11,7 @@ namespace ImageAPI
             var mappingConfig = new MapperConfiguration(config =>
             {
                 config.CreateMap<ImageMetadataDto, ImageMetadata>();
+
                 config.CreateMap<ImageMetadata, ImageMetadataDto>();
             });
             return mappingConfig;

@@ -15,7 +15,7 @@ namespace ImageAPI.Controllers
         private readonly IImageService _imageService;
         private ResponseDto _response;
         private IMapper _mapper;
-   
+
         public ImageController(IImageService imageService, IMapper mapper)
         {
             _imageService = imageService;
@@ -23,22 +23,33 @@ namespace ImageAPI.Controllers
             _mapper = mapper;
         }
 
-        [HttpPost("upload-request")]
-        public async Task<ResponseDto> Post([FromBody] ImageMetadataDto request)
-        {
-         
-            var _obj = await _imageService.AddImageAsync(request, request.UserId ?? string.Empty);
-            _response.Result = _mapper.Map<ImageMetadataDto>(_obj);
-
-            return _response;
-        }
-
-        [HttpGet("get-images-by-user")]
-        public async Task<ResponseDto> GetUserImages()
+        [HttpPost]
+        [Route("upload-request")]
+        public async Task<ResponseDto> Post([FromForm] ImageMetadataDto request)
         {
             try
             {
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var _obj = await _imageService.AddImageAsync(request, request.UserId ?? string.Empty);
+                _response.Result = _mapper.Map<ImageMetadataDto>(_obj);
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+            }
+            return _response;
+
+           
+
+           
+        }
+
+        [HttpGet]
+        [Route("get-images-by-user/{userId}")]
+        public async Task<ResponseDto> GetUserImages(string userId)
+        {
+            try
+            {
                 if (string.IsNullOrEmpty(userId))
                 {
                     _response.IsSuccess = false;
@@ -60,7 +71,8 @@ namespace ImageAPI.Controllers
 
         }
 
-        [HttpGet("get-images")]
+        [HttpGet]
+        [Route("get-images")]
         public async Task<ResponseDto> GetImages()
         {
             try
@@ -76,7 +88,8 @@ namespace ImageAPI.Controllers
             return _response;
         }
 
-        [HttpPut("update-thumbnail-status")]
+        [HttpPut]
+        [Route("update-image")]
         public async Task<ResponseDto> Put([FromBody] ImageMetadataDto request)
         {
             try

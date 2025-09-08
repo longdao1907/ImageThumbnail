@@ -15,6 +15,7 @@ namespace ImageAPI.Infrastructure.Persistence.Repositories
 
         public async Task AddAsync(ImageMetadata metadata)
         {
+            metadata.UploadDate = metadata.UploadDate.ToUniversalTime();
             await _context.ImageMetadata.AddAsync(metadata);
             await _context.SaveChangesAsync();
         }

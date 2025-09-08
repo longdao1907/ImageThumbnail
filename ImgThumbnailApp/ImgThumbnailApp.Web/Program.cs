@@ -1,7 +1,20 @@
+using ImgThumbnailApp.Web.Services;
+using ImgThumbnailApp.Web.Utilities;
+using ImgThumbnailApp.Web.Services.IServices;
+using System.Threading.Tasks.Dataflow;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddHttpClient();
+builder.Services.AddHttpClient<IImageService, ImageService>();  
+
+SD.ImageAPIBase = builder.Configuration["ServiceUrls:ImageAPI"];
+
+builder.Services.AddScoped<IBaseService, BaseService>();    
+builder.Services.AddScoped<IImageService, ImageService>();
 
 var app = builder.Build();
 
@@ -22,6 +35,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Image}/{action=ImageIndex}/{id?}");
 
 app.Run();

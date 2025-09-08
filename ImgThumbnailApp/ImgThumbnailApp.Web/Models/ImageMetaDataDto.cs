@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ImageAPI.Core.Application.DTOs
+namespace ImgThumbnailApp.Web.Models
 {
     public class ImageMetadataDto
     {
@@ -16,5 +16,7 @@ namespace ImageAPI.Core.Application.DTOs
         [Required]
         public string ContentType { get; set; } = string.Empty;
         public string GcsObjectName { get; set; } = string.Empty;
+
+        public IFormFile? OriginalImageFile { get; set; }
     }
 }

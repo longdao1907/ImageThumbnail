@@ -16,5 +16,7 @@ namespace ImageAPI.Core.Application.DTOs
         [Required]
         public string ContentType { get; set; } = string.Empty;
         public string GcsObjectName { get; set; } = string.Empty;
+
+        public IFormFile? OriginalImageFile { get; set; }
     }
 }

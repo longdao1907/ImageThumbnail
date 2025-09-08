@@ -1,7 +1,8 @@
 ﻿using ImgThumbnailApp.Web.Models;
 using ImgThumbnailApp.Web.Services.IServices;
-using System.Text.Json;
 using ImgThumbnailApp.Web.Utilities;
+using System.Text;
+using System.Text.Json;
 
 namespace ImgThumbnailApp.Web.Services
 {
@@ -16,16 +17,54 @@ namespace ImgThumbnailApp.Web.Services
         {
             HttpClient client = _httpClientFactory.CreateClient("ImgThumbnailAppAPI");
             HttpRequestMessage message = new HttpRequestMessage();
-            message.Headers.Add("Accept", "application/json");
+
+            if (requestDto.ContentType == Utilities.SD.ContentType.MultipartFormData)
+            {
+                message.Headers.Add("Accept", "*/*");
+            }
+            else
+            {
+                message.Headers.Add("Accept", "application/json");
+            }
+
+
+
 
             //token
 
             message.RequestUri = new Uri(requestDto.Url);
 
-            if (requestDto.Data != null)
+            if (requestDto.ContentType == Utilities.SD.ContentType.MultipartFormData)
             {
-                message.Content = new StringContent(JsonSerializer.Serialize(requestDto.Data), System.Text.Encoding.UTF8, "application/json");
+                var content = new MultipartFormDataContent();
+
+                foreach (var prop in requestDto.Data.GetType().GetProperties())
+                {
+                    var value = prop.GetValue(requestDto.Data);
+                    if (value is FormFile)
+                    {
+                        var file = (FormFile)value;
+                        if (file != null)
+                        {
+                            content.Add(new StreamContent(file.OpenReadStream()), prop.Name, file.FileName);
+                        }
+                    }
+                    else
+                    {
+                        content.Add(new StringContent(value == null ? "" : value.ToString()), prop.Name);
+                    }
+                }
+                message.Content = content;
             }
+            else
+            {
+                if (requestDto.Data != null)
+                {
+                    message.Content = new StringContent(JsonSerializer.Serialize(requestDto.Data), Encoding.UTF8, "application/json");
+                }
+            }
+
+          
 
             HttpResponseMessage? apiResponse = null;
 
@@ -48,6 +87,7 @@ namespace ImgThumbnailApp.Web.Services
             apiResponse = await client.SendAsync(message);
             try
             {
+                
                 switch (apiResponse.StatusCode)
                 {
                     case System.Net.HttpStatusCode.NotFound:
@@ -73,9 +113,11 @@ namespace ImgThumbnailApp.Web.Services
                     IsSuccess = false,
                     Message = ex.Message
                 };
+
+                return dto;
             }
 
         }
     }
 }
-}
+
