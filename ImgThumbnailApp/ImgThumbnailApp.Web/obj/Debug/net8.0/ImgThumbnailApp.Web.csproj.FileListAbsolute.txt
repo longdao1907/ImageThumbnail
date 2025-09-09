@@ -32,3 +32,10 @@ C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ImgThumbnailApp
 C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ImgThumbnailApp.Web\obj\Debug\net8.0\ImgThumbnailApp.Web.pdb
 C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ImgThumbnailApp.Web\obj\Debug\net8.0\ImgThumbnailApp.Web.genruntimeconfig.cache
 C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ImgThumbnailApp.Web\obj\Debug\net8.0\ref\ImgThumbnailApp.Web.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ImgThumbnailApp.Web\obj\Debug\net8.0\ImgThumbnailApp.Web.csproj.AssemblyReference.cache
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ImgThumbnailApp.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ImgThumbnailApp.Web\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ImgThumbnailApp.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ImgThumbnailApp.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ImgThumbnailApp.Web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ImgThumbnailApp.Web\obj\Debug\net8.0\ImgThumb.9C6B5EE2.Up2Date

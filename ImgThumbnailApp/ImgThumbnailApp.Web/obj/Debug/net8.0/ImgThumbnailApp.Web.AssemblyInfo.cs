@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImgThumbnailApp.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+964701cc67c807c35619ae0330d579cded5dae18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf7810663fe847ec1227afbb03a3361a92fea7dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImgThumbnailApp.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImgThumbnailApp.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

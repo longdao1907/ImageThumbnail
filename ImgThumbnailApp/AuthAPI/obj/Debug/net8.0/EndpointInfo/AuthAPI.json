@@ -14,17 +14,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterRequestDto"
+                "$ref": "#/components/schemas/RegistrationRequestDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterRequestDto"
+                "$ref": "#/components/schemas/RegistrationRequestDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterRequestDto"
+                "$ref": "#/components/schemas/RegistrationRequestDto"
               }
             }
           }
@@ -72,15 +72,14 @@
     "schemas": {
       "LoginRequestDto": {
         "required": [
-          "email",
-          "password"
+          "password",
+          "username"
         ],
         "type": "object",
         "properties": {
-          "email": {
+          "username": {
             "minLength": 1,
-            "type": "string",
-            "format": "email"
+            "type": "string"
           },
           "password": {
             "minLength": 1,
@@ -89,7 +88,7 @@
         },
         "additionalProperties": false
       },
-      "RegisterRequestDto": {
+      "RegistrationRequestDto": {
         "required": [
           "email",
           "password"
@@ -100,6 +99,10 @@
             "minLength": 1,
             "type": "string",
             "format": "email"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
           },
           "password": {
             "maxLength": 100,

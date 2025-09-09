@@ -1,6 +1,8 @@
 ﻿using AuthAPI.Core.Application.DTOs;
 using AuthAPI.Core.Application.Interfaces;
+using Azure;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace AuthAPI.Controllers
 {
@@ -10,31 +12,43 @@ namespace AuthAPI.Controllers
     {
         private readonly IAuthService _authService;
 
-        public AuthController(IAuthService authService)
+        private readonly IConfiguration _configuration;
+        protected ResponseDto _response;
+
+        public AuthController(IAuthService authService,  IConfiguration configuration)
         {
             _authService = authService;
+            _configuration = configuration;
+          
+            _response = new();
         }
 
+
         [HttpPost("register")]
-        public async Task<IActionResult> Register(RegisterRequestDto request)
+        public async Task<IActionResult> Register(RegistrationRequestDto request)
         {
-            var user = await _authService.RegisterAsync(request);
-            if (user == null)
+            var errorMessage = await _authService.Register(request);
+            if (!string.IsNullOrEmpty(errorMessage))
             {
-                return BadRequest("Email is already taken.");
+                _response.IsSuccess = false;
+                _response.Message = errorMessage;
+                return BadRequest(_response);
             }
-            return CreatedAtAction(nameof(Register), new { id = user.Id }, user);
+            return Ok(_response);
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginRequestDto request)
         {
-            var token = await _authService.LoginAsync(request);
-            if (token == null)
+            var loginResponse = await _authService.Login(request);
+            if (loginResponse.User == null)
             {
-                return Unauthorized("Invalid email or password.");
+                _response.IsSuccess = false;
+                _response.Message = "Username or password is incorrect";
+                return BadRequest(_response);
             }
-            return Ok(new { Token = token });
+            _response.Result = loginResponse;
+            return Ok(_response);
         }
     }
 }

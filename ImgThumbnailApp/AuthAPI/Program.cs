@@ -1,8 +1,11 @@
+
 using AuthAPI.Core.Application.Interfaces;
+using AuthAPI.Core.Application.Options;
 using AuthAPI.Core.Application.Services;
+using AuthAPI.Core.Domain.Entities;
 using AuthAPI.Infrastructure.Persistence;
-using AuthAPI.Infrastructure.Persistence.Repositories;
-using AuthAPI.Infrastructure.Services;
+
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,13 +13,16 @@ var builder = WebApplication.CreateBuilder(args);
 // 1. Add services to the container.
 
 // Configure EF Core with SQL Server
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContextFactory<AppDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 
+});
+
+builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("ApiSettings:JwtOptions"));
 // Register interfaces and implementations for Dependency Injection
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IPasswordService, PasswordService>();
-builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddControllers();
@@ -33,7 +39,25 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
-
+ApplyMigrations();
 app.Run();
+
+
+void ApplyMigrations()
+{
+    using (var scope = app.Services.CreateScope())
+    {
+        var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+
+        if (dbContext.Database.GetPendingMigrations().Any())
+        {
+            dbContext.Database.Migrate();
+        }
+    }
+    ;
+
+}

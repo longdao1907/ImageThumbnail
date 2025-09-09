@@ -9,7 +9,7 @@ namespace ImageAPI.Controllers
 {
     [ApiController]
     [Route("api/Image")]
-    //[Authorize] // Protect all endpoints in this controller
+    [Authorize] // Protect all endpoints in this controller
     public class ImageController : ControllerBase
     {
         private readonly IImageService _imageService;

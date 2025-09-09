@@ -10,9 +10,14 @@
                 <span asp-validation-for="Email" class="text-danger" />
             </div>
             <div class="col-12 col-md-6 offset-md-3 pb-2">
+                <input asp-for="Name" class="form-control" placeholder="Name..." />
+                <span asp-validation-for="Name" class="text-danger" />
+            </div>
+            <div class="col-12 col-md-6 offset-md-3 pb-2">
                 <input asp-for="Password" class="form-control" placeholder="Password..." />
                 <span asp-validation-for="Password" class="text-danger" />
-            </div>
+            </div>      
+
             <div class="col-12 col-md-6 offset-md-3 pb-2">
                 <button type="submit" class="form-control btn btn-success" value="Submit">Register</button>
             </div>

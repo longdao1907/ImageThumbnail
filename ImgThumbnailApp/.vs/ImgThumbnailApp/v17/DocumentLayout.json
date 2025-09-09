@@ -3,116 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\infrastructure\\services\\gcsstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\infrastructure\\services\\gcsstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\core\\application\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\core\\application\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A08BC12-7FB4-4C4E-B3C9-21EB591FEE38}|AuthAPI\\AuthAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\authapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A08BC12-7FB4-4C4E-B3C9-21EB591FEE38}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\core\\application\\interfaces\\istorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\core\\application\\interfaces\\istorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\core\\domain\\entities\\imagemetadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\core\\domain\\entities\\imagemetadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\mappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\mappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\core\\application\\dtos\\imagemetadatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\core\\application\\dtos\\imagemetadatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\infrastructure\\persistence\\repositories\\imagemetadatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\infrastructure\\persistence\\repositories\\imagemetadatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\services\\iservices\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\services\\iservices\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\models\\imagemetadatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\models\\imagemetadatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\webapplicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\webapplicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\models\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\models\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\models\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\models\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\models\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\models\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\models\\requestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\models\\requestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A08BC12-7FB4-4C4E-B3C9-21EB591FEE38}|AuthAPI\\AuthAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\authapi\\core\\application\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A08BC12-7FB4-4C4E-B3C9-21EB591FEE38}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\core\\application\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\services\\iservices\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\services\\iservices\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\utilities\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\utilities\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\core\\application\\interfaces\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\core\\application\\interfaces\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\views\\image\\imageindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\views\\image\\imageindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\views\\image\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\views\\image\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\models\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\models\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imgthumbnailapp.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4A38C11B-E777-4580-B73C-835B3A02800A}|ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj|solutionrelative:imgthumbnailapp.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\imageapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2BB479A0-A6D4-498E-AF57-164D0AACEAF5}|ImageAPI\\ImageAPI.csproj|solutionrelative:imageapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{5A08BC12-7FB4-4C4E-B3C9-21EB591FEE38}|AuthAPI\\AuthAPI.csproj|c:\\users\\letin\\onedrive\\documents\\imagethumbnail\\imgthumbnailapp\\authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5A08BC12-7FB4-4C4E-B3C9-21EB591FEE38}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -126,351 +78,215 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ImageService.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Core\\Application\\Services\\ImageService.cs",
-              "RelativeDocumentMoniker": "ImageAPI\\Core\\Application\\Services\\ImageService.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Core\\Application\\Services\\ImageService.cs",
-              "RelativeToolTip": "ImageAPI\\Core\\Application\\Services\\ImageService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCIAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T07:50:45.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IStorageService.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Core\\Application\\Interfaces\\IStorageService.cs",
-              "RelativeDocumentMoniker": "ImageAPI\\Core\\Application\\Interfaces\\IStorageService.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Core\\Application\\Interfaces\\IStorageService.cs",
-              "RelativeToolTip": "ImageAPI\\Core\\Application\\Interfaces\\IStorageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAVAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Program.cs",
+              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Program.cs",
+              "RelativeToolTip": "ImgThumbnailApp.Web\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T09:14:27.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GcsStorageService.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Infrastructure\\Services\\GcsStorageService.cs",
-              "RelativeDocumentMoniker": "ImageAPI\\Infrastructure\\Services\\GcsStorageService.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Infrastructure\\Services\\GcsStorageService.cs*",
-              "RelativeToolTip": "ImageAPI\\Infrastructure\\Services\\GcsStorageService.cs*",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDMAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T08:48:54.263Z",
+              "WhenOpened": "2025-09-08T17:52:59.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ImageMetaData.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Core\\Domain\\Entities\\ImageMetaData.cs",
-              "RelativeDocumentMoniker": "ImageAPI\\Core\\Domain\\Entities\\ImageMetaData.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Core\\Domain\\Entities\\ImageMetaData.cs",
-              "RelativeToolTip": "ImageAPI\\Core\\Domain\\Entities\\ImageMetaData.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBoAAAAWAAAAAAAAAA==",
+              "Title": "IBaseService.cs",
+              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Services\\IServices\\IBaseService.cs",
+              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Services\\IServices\\IBaseService.cs",
+              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Services\\IServices\\IBaseService.cs",
+              "RelativeToolTip": "ImgThumbnailApp.Web\\Services\\IServices\\IBaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T03:24:13.951Z"
+              "WhenOpened": "2025-09-08T17:49:33.369Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "ImageAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\appsettings.json",
-              "RelativeToolTip": "ImageAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-08T02:17:57.911Z",
+              "DocumentIndex": 9,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\AuthAPI\\Core\\Application\\DTOs\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Core\\Application\\DTOs\\LoginRequestDto.cs",
+              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\AuthAPI\\Core\\Application\\DTOs\\LoginRequestDto.cs",
+              "RelativeToolTip": "AuthAPI\\Core\\Application\\DTOs\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T17:43:11.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ImgThumbnailApp.Web\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAwwGkAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T17:04:25.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\AuthAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\AuthAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AuthAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T17:04:25.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MappingConfig.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\MappingConfig.cs",
-              "RelativeDocumentMoniker": "ImageAPI\\MappingConfig.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\MappingConfig.cs",
-              "RelativeToolTip": "ImageAPI\\MappingConfig.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
+              "Title": "WebApplicationBuilderExtension.cs",
+              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\WebApplicationBuilderExtension.cs",
+              "RelativeDocumentMoniker": "ImageAPI\\WebApplicationBuilderExtension.cs",
+              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\WebApplicationBuilderExtension.cs",
+              "RelativeToolTip": "ImageAPI\\WebApplicationBuilderExtension.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwAwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T10:38:17.995Z"
+              "WhenOpened": "2025-09-08T16:51:26.512Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ImageController.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Controllers\\ImageController.cs",
-              "RelativeDocumentMoniker": "ImageAPI\\Controllers\\ImageController.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Controllers\\ImageController.cs",
-              "RelativeToolTip": "ImageAPI\\Controllers\\ImageController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAIAwwCIAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T05:41:47.003Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ImageController.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Controllers\\ImageController.cs",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Controllers\\ImageController.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Controllers\\ImageController.cs",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\Controllers\\ImageController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAmwD0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T06:32:48.198Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ImageService.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Services\\ImageService.cs",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Services\\ImageService.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Services\\ImageService.cs",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\Services\\ImageService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwB4AAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T08:16:00.862Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ImageMetaDataDto.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Core\\Application\\DTOs\\ImageMetaDataDto.cs",
-              "RelativeDocumentMoniker": "ImageAPI\\Core\\Application\\DTOs\\ImageMetaDataDto.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Core\\Application\\DTOs\\ImageMetaDataDto.cs",
-              "RelativeToolTip": "ImageAPI\\Core\\Application\\DTOs\\ImageMetaDataDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAIAywA0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T09:33:14.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ImageMetaDataRepository.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Infrastructure\\Persistence\\Repositories\\ImageMetaDataRepository.cs",
-              "RelativeDocumentMoniker": "ImageAPI\\Infrastructure\\Persistence\\Repositories\\ImageMetaDataRepository.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Infrastructure\\Persistence\\Repositories\\ImageMetaDataRepository.cs",
-              "RelativeToolTip": "ImageAPI\\Infrastructure\\Persistence\\Repositories\\ImageMetaDataRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T10:35:05.113Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "BaseService.cs",
               "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Services\\BaseService.cs",
               "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Services\\BaseService.cs",
               "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Services\\BaseService.cs",
               "RelativeToolTip": "ImgThumbnailApp.Web\\Services\\BaseService.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAWwFYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAswFkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T08:13:35.908Z"
+              "WhenOpened": "2025-09-08T17:00:12.61Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ImageMetaDataDto.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Models\\ImageMetaDataDto.cs",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Models\\ImageMetaDataDto.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Models\\ImageMetaDataDto.cs",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\Models\\ImageMetaDataDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T02:00:05.157Z"
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "ImgThumbnailApp.Web\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T17:44:22.174Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 7,
               "Title": "LoginRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Models\\LoginRequestDto.cs",
               "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Models\\LoginRequestDto.cs",
               "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Models\\LoginRequestDto.cs",
               "RelativeToolTip": "ImgThumbnailApp.Web\\Models\\LoginRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T04:52:17.737Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Models\\ResponseDto.cs",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Models\\ResponseDto.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Models\\ResponseDto.cs",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\Models\\ResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T09:50:04.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Models\\RequestDto.cs",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Models\\RequestDto.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Models\\RequestDto.cs",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\Models\\RequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T09:26:58.324Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IImageService.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Services\\IServices\\IImageService.cs",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Services\\IServices\\IImageService.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Services\\IServices\\IImageService.cs",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\Services\\IServices\\IImageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T08:15:58.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SD.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Utilities\\SD.cs",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Utilities\\SD.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Utilities\\SD.cs",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\Utilities\\SD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T09:53:18.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IImageService.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Core\\Application\\Interfaces\\IImageService.cs",
-              "RelativeDocumentMoniker": "ImageAPI\\Core\\Application\\Interfaces\\IImageService.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Core\\Application\\Interfaces\\IImageService.cs",
-              "RelativeToolTip": "ImageAPI\\Core\\Application\\Interfaces\\IImageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T09:05:41.129Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ImageIndex.cshtml",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Views\\Image\\ImageIndex.cshtml",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Views\\Image\\ImageIndex.cshtml",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Views\\Image\\ImageIndex.cshtml",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\Views\\Image\\ImageIndex.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-08T01:51:40.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Upload.cshtml",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Views\\Image\\Upload.cshtml",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Views\\Image\\Upload.cshtml",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Views\\Image\\Upload.cshtml",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\Views\\Image\\Upload.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-08T08:24:13.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Properties\\launchSettings.json",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-08T05:46:43.598Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T05:46:51.563Z"
+              "WhenOpened": "2025-09-08T17:43:23.561Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Views\\Auth\\Register.cshtml",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Views\\Auth\\Register.cshtml",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Views\\Auth\\Register.cshtml",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\Views\\Auth\\Register.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-08T04:51:08.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "RegisterRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Models\\RegisterRequestDto.cs",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Models\\RegisterRequestDto.cs",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Models\\RegisterRequestDto.cs",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\Models\\RegisterRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Models\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Models\\LoginResponseDto.cs",
+              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Models\\LoginResponseDto.cs",
+              "RelativeToolTip": "ImgThumbnailApp.Web\\Models\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T04:53:16.053Z"
+              "WhenOpened": "2025-09-08T17:43:46.714Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "ImageAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "ImageAPI\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-07T06:00:36.121Z"
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ImgThumbnailApp.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T16:59:00.188Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\appsettings.json",
               "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\appsettings.json",
               "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\appsettings.json",
               "RelativeToolTip": "ImgThumbnailApp.Web\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-07T06:42:33.724Z"
+              "WhenOpened": "2025-09-08T16:58:56.628Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "bootstrap.css",
-              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "RelativeDocumentMoniker": "ImgThumbnailApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImgThumbnailApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "RelativeToolTip": "ImgThumbnailApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-07T06:14:03.836Z"
+              "DocumentIndex": 10,
+              "Title": "ImageController.cs",
+              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Controllers\\ImageController.cs",
+              "RelativeDocumentMoniker": "ImageAPI\\Controllers\\ImageController.cs",
+              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Controllers\\ImageController.cs",
+              "RelativeToolTip": "ImageAPI\\Controllers\\ImageController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwE8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T17:06:35.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ImageAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\Program.cs",
+              "RelativeToolTip": "ImageAPI\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAswFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T16:54:59.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "ImageAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\ImageAPI\\appsettings.json",
+              "RelativeToolTip": "ImageAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-08T16:49:00.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\AuthAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\letin\\OneDrive\\Documents\\ImageThumbnail\\ImgThumbnailApp\\AuthAPI\\appsettings.json",
+              "RelativeToolTip": "AuthAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-08T16:48:51.362Z",
+              "EditorCaption": ""
             }
           ]
         }

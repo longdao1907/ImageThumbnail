@@ -11,6 +11,11 @@
         "Path": "ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj",
         "Action": "Start",
         "DebugTarget": "IIS Express"
+      },
+      {
+        "Path": "AuthAPI\\AuthAPI.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
       }
     ]
   }

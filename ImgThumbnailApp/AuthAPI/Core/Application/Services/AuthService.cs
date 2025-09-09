@@ -1,58 +1,95 @@
 ﻿using AuthAPI.Core.Application.DTOs;
 using AuthAPI.Core.Application.Interfaces;
 using AuthAPI.Core.Domain.Entities;
+using AuthAPI.Infrastructure.Persistence;
+using Microsoft.AspNetCore.Identity;
 
 namespace AuthAPI.Core.Application.Services
 {
-    public class AuthService: IAuthService
+    public class AuthService : IAuthService
     {
-        private readonly IUserRepository _userRepository;
-        private readonly IPasswordService _passwordService;
-        private readonly ITokenService _tokenService;
+        private readonly AppDbContext _db;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IJwtTokenGenerator _jwtTokenGenerator;
 
-        public AuthService(IUserRepository userRepository, IPasswordService passwordService, ITokenService tokenService)
+        public AuthService(AppDbContext db, IJwtTokenGenerator jwtTokenGenerator,
+            UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
-            _userRepository = userRepository;
-            _passwordService = passwordService;
-            _tokenService = tokenService;
+            _db = db;
+            _jwtTokenGenerator = jwtTokenGenerator;
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
-
-        public async Task<string?> LoginAsync(LoginRequestDto request)
+        public async Task<LoginResponseDto> Login(LoginRequestDto loginRequestDto)
         {
-            var existingUser = await _userRepository.GetByEmailAsync(request.Email);
-            if (existingUser == null)
+            var user = _db.ApplicationUsers.FirstOrDefault(u => u.UserName.ToLower() == loginRequestDto.Username.ToLower());
+
+            bool isValid = await _userManager.CheckPasswordAsync(user, loginRequestDto.Password);
+
+            if (user == null || isValid == false)
             {
-                return null; // User not found
+                return new LoginResponseDto() { User = null, Token = "" };
             }
 
-            var isPasswordValid = _passwordService.VerifyPassword(request.Password, existingUser.PasswordHash);
-            if (!isPasswordValid)
-            {
-                return null; // Invalid password
-            }
+            //if user was found , Generate JWT Token
+            var token = _jwtTokenGenerator.GenerateToken(user);
 
-            return _tokenService.CreateToken(existingUser);
-        }
-
-        public async Task<UserDto?> RegisterAsync(RegisterRequestDto request)
-        {
-            var existingUser = await _userRepository.GetByEmailAsync(request.Email);
-            if (existingUser != null)
+            UserDto userDTO = new()
             {
-                return null; // User already exists
-            }
-
-            var user = new User
-            {
-                Id = Guid.NewGuid(),
-                Email = request.Email,
-                PasswordHash = _passwordService.HashPassword(request.Password),
-                CreatedAt = DateTime.UtcNow
+                Email = user.Email,
+                Id = user.Id,
+                Name = user.Name
             };
 
-            await _userRepository.AddAsync(user);
+            LoginResponseDto loginResponseDto = new LoginResponseDto()
+            {
+                User = userDTO,
+                Token = token
+            };
 
-            return new UserDto { Id = user.Id, Email = user.Email };
+            return loginResponseDto;
+        }
+
+        public async Task<string> Register(RegistrationRequestDto registrationRequestDto)
+        {
+            ApplicationUser user = new()
+            {
+                UserName = registrationRequestDto.Email,
+                Email = registrationRequestDto.Email,
+                NormalizedEmail = registrationRequestDto.Email.ToUpper(),
+                Name = registrationRequestDto.Name
+            };
+
+            try
+            {
+                var result = await _userManager.CreateAsync(user, registrationRequestDto.Password);
+                if (result.Succeeded)
+                {
+                    var userToReturn = _db.ApplicationUsers.First(u => u.UserName == registrationRequestDto.Email);
+
+                    UserDto userDto = new()
+                    {
+                        Email = userToReturn.Email,
+                        Id = userToReturn.Id,
+                        Name = userToReturn.Name,
+                    };
+
+                    return "";
+
+                }
+                else
+                {
+                    return result.Errors.FirstOrDefault().Description;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return "Error Encountered";
+
         }
     }
 }
