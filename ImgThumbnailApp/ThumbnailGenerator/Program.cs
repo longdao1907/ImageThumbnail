@@ -16,6 +16,8 @@ builder.Services.AddSingleton<IKmsService, KmsService>();
 builder.Services.AddScoped<ThumbnailService>();
 
 // Configure a typed HttpClient for the ImageApiClient
+// This demonstrates proper DI registration for Infrastructure layer implementations
+// Pattern: Register interface from Application layer → Implementation from Infrastructure layer
 builder.Services.AddHttpClient<IImageApiClient, ImageApiClient>(client =>
 {
     var baseUrl = builder.Configuration["ImageApi:BaseUrl"];

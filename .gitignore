@@ -6,3 +6,8 @@ ImgThumbnailApp/.vs/ImgThumbnailApp/CopilotIndices/17.14.1091.29919/SemanticSymb
 ImgThumbnailApp/.vs/ImgThumbnailApp/CopilotIndices/17.14.1091.29919/SemanticSymbols.db-wal
 ImgThumbnailApp/.vs/ImgThumbnailApp/FileContentIndex/8c38303e-17aa-478f-b8f4-106631df5e06.vsidx
 *.vsidx
+
+# .NET build artifacts
+bin/
+obj/
+.vs/
