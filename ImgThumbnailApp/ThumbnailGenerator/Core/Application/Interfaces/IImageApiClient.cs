@@ -1,8 +1,11 @@
-﻿namespace ThumbnailGenerator.Core.Application.Interfaces
+﻿using ThumbnailGenerator.Core.Application.DTOs;
+
+namespace ThumbnailGenerator.Core.Application.Interfaces
 {
     public enum ThumbnailUpdateStatus { Completed, Failed }
     public interface IImageApiClient
     {
-        Task UpdateThumbnailStatusAsync(Guid imageId, ThumbnailUpdateStatus status, string? thumbnailUrl = null);
+        Task UpdateThumbnailStatusAsync(UpdateThumbnailImageDto updateThumbnailImageDto, String accessToken);
+
     }
 }

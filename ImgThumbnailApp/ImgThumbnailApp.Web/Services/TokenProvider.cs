@@ -16,6 +16,7 @@ namespace ImgThumbnailApp.Web.Services
         public void ClearToken()
         {
             _contextAccessor.HttpContext?.Response.Cookies.Delete(SD.TokenCookie);
+
         }
 
         public string? GetToken()
@@ -27,7 +28,23 @@ namespace ImgThumbnailApp.Web.Services
 
         public void SetToken(string token)
         {
-            _contextAccessor.HttpContext?.Response.Cookies.Append(SD.TokenCookie, token);
+            var cookieOptions = new CookieOptions
+            {                
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.Lax
+          
+            };
+
+            // Lấy HttpContext từ IHttpContextAccessor
+            var httpContext = _contextAccessor.HttpContext;
+
+            if (httpContext != null)
+            {
+                // Gắn cookie vào response với các tùy chọn bảo mật đã thiết lập
+                httpContext.Response.Cookies.Append(SD.TokenCookie, token, cookieOptions);
+            }
+      
         }
     }
 }

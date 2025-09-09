@@ -6,6 +6,9 @@ namespace ThumbnailGenerator.Core.Domain.Models
     /// Represents the 'data' payload of a CloudEvent for a Google Cloud Storage object finalization.
     /// See: https://cloud.google.com/storage/docs/json_api/v1/objects#resource
     /// </summary>
+    /// 
+
+
     public class StorageObjectData
     {
         [JsonPropertyName("bucket")]

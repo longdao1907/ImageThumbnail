@@ -7,29 +7,35 @@ namespace ThumbnailGenerator.Infrastructure.Services
     public class GcsStorageService: IStorageService
     {
         private readonly StorageClient _storageClient;
-        private readonly string _sourceBucketName;
-        private readonly string _destinationBucketName;
+        private readonly string _bucketName;
 
         public GcsStorageService(IConfiguration configuration)
         {
             _storageClient = StorageClient.Create();
-            _sourceBucketName = configuration["Gcp:SourceBucketName"] ?? throw new ArgumentNullException("Gcp:SourceBucketName");
-            _destinationBucketName = configuration["Gcp:DestinationBucketName"] ?? throw new ArgumentNullException("Gcp:DestinationBucketName");
+            _bucketName = configuration["Gcp:BucketName"] ?? throw new ArgumentNullException("Gcp:SourceBucketName");
         }
 
         public async Task DownloadFileAsync(string objectName, Stream destination)
         {
-            await _storageClient.DownloadObjectAsync(_sourceBucketName, objectName, destination);
+            try
+            {
+                await _storageClient.DownloadObjectAsync(_bucketName, objectName, destination);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            
         }
 
         public async Task<string> UploadFileAsync(string objectName, Stream source, string contentType)
         {
             var uploadedObject = await _storageClient.UploadObjectAsync(
-                _destinationBucketName,
+                _bucketName,
                 objectName,
                 contentType,
-                source,
-                new UploadObjectOptions { PredefinedAcl = PredefinedObjectAcl.PublicRead }
+                source
             );
             return uploadedObject.MediaLink;
         }

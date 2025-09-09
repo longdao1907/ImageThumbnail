@@ -23,8 +23,11 @@ public class ImageService : IImageService
 
     public async Task<ImageMetadataDto> AddImageAsync(ImageMetadataDto request, string userId)
     {
-        var objectName = $"{Guid.NewGuid()}-{request.FileName}";
         var metadata = _mapper.Map<ImageMetadata>(request);
+        metadata = await _metadataRepository.AddAsync(metadata);
+
+        var objectName = $"{metadata.Id}_{request.FileName}";
+   
 
         string uploadUrl = string.Empty;
 
@@ -34,12 +37,8 @@ public class ImageService : IImageService
 
             metadata.GcsObjectName = await _storageService.UploadFileAsync(objectName, source, request.ContentType);
         }
-
-        
-
-        await _metadataRepository.AddAsync(metadata);
-
-        
+       
+        await _metadataRepository.UpdateAsync(metadata);
 
         return _mapper.Map<ImageMetadataDto>(metadata);
     }
@@ -55,12 +54,14 @@ public class ImageService : IImageService
         var images = await _metadataRepository.GetImages();
         return images.Select(img => _mapper.Map<ImageMetadataDto>(img)).OrderByDescending(i => i.UploadDate);
     }
-
-    public async Task UpdateImageAsync(ImageMetadataDto imageMetadata)
+    
+    public async Task UpdateImageAsync(UpdateThumbnailImageDto model)
     {
-        var metadata = _mapper.Map<ImageMetadata>(imageMetadata);
+        var metadata = await _metadataRepository.GetByIdAsync(model.ImageId);
         if (metadata != null)
         {
+            metadata.Status = model.Status;
+            metadata.ThumbnailUrl = model.ThumbnailUrl;
             await _metadataRepository.UpdateAsync(metadata);
         }
 

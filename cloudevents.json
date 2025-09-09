@@ -1,0 +1,19 @@
+{
+  "specversion": "1.0",
+  "type": "google.cloud.storage.object.v1.finalized",
+  "source": "//storage.googleapis.com/projects/_/buckets/onl-img-thumbn-bucket",
+  "id": "1234567890",
+  "time": "2025-09-09T07:08:37.000Z",
+  "datacontenttype": "application/json",
+  "subject": "original-image/2e039822-8c00-4aae-8163-2f4910eae6b8_sample-birch-400x300",
+  "data": {
+    "kind": "storage#object",
+    "id": "onl-img-thumbn-bucket/original-image/2e039822-8c00-4aae-8163-2f4910eae6b8_sample-birch-400x300",
+    "bucket": "onl-img-thumbn-bucket",
+    "name": "original-image/2e039822-8c00-4aae-8163-2f4910eae6b8_sample-birch-400x300",
+    "size": 12345,
+    "contentType": "image/jpg",
+    "timeCreated": "2025-09-09T07:08:37.000Z",
+    "updated": "2025-09-09T07:08:37.000Z"
+  }
+}

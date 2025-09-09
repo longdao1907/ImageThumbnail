@@ -191,17 +191,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ImageMetadataDto"
+                "$ref": "#/components/schemas/UpdateThumbnailImageDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ImageMetadataDto"
+                "$ref": "#/components/schemas/UpdateThumbnailImageDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ImageMetadataDto"
+                "$ref": "#/components/schemas/UpdateThumbnailImageDto"
               }
             }
           }
@@ -233,56 +233,6 @@
   },
   "components": {
     "schemas": {
-      "ImageMetadataDto": {
-        "required": [
-          "contentType"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "fileName": {
-            "type": "string",
-            "nullable": true
-          },
-          "fileSize": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "uploadDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "status": {
-            "type": "string",
-            "nullable": true
-          },
-          "thumbnailUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "userId": {
-            "type": "string",
-            "nullable": true
-          },
-          "contentType": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "gcsObjectName": {
-            "type": "string",
-            "nullable": true
-          },
-          "originalImageFile": {
-            "type": "string",
-            "format": "binary",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "ResponseDto": {
         "type": "object",
         "properties": {
@@ -293,6 +243,24 @@
             "type": "boolean"
           },
           "message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateThumbnailImageDto": {
+        "type": "object",
+        "properties": {
+          "imageId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "thumbnailUrl": {
             "type": "string",
             "nullable": true
           }

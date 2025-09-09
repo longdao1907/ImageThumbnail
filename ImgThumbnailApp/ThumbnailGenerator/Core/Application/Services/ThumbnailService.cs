@@ -1,10 +1,11 @@
 ﻿using Microsoft.Extensions.Logging;
 using ThumbnailGenerator.Core.Application.Interfaces;
+using ThumbnailGenerator.Core.Application.DTOs;
 using ThumbnailGenerator.Core.Domain.Models;
 
 namespace ThumbnailGenerator.Core.Application.Services
 {
-    public class ThumbnailService
+    public class ThumbnailService : IThumbnailService
     {
         private readonly IStorageService _storageService;
         private readonly IImageProcessor _imageProcessor;
@@ -14,7 +15,7 @@ namespace ThumbnailGenerator.Core.Application.Services
         public ThumbnailService(
             IStorageService storageService,
             IImageProcessor imageProcessor,
-            IImageApiClient imageApiClient,
+            IImageApiClient imageApiClient, 
             ILogger<ThumbnailService> logger)
         {
             _storageService = storageService;
@@ -23,13 +24,13 @@ namespace ThumbnailGenerator.Core.Application.Services
             _logger = logger;
         }
 
-        public async Task ProcessImageAsync(StorageObjectData data)
+        public async Task ProcessImageAsync(StorageObjectData data, string accessToken)
         {
             // **Architectural Note:** This assumes the GCS object name is structured like:
-            // {userId}/{imageId}/{originalFileName}
+            // {foldername}/{imageId}_{originalFileName}
             // We parse the imageId (a Guid) from the second part of the path.
             var pathSegments = data.Name.Split('/');
-            if (pathSegments.Length < 2 || !Guid.TryParse(pathSegments[1], out var imageId))
+            if (pathSegments.Length < 2 || !Guid.TryParse(pathSegments[1].Split('_')[0], out var imageId))
             {
                 _logger.LogError("Could not parse imageId from GCS object name: {ObjectName}", data.Name);
                 return;
@@ -37,8 +38,8 @@ namespace ThumbnailGenerator.Core.Application.Services
 
             _logger.LogInformation("Processing imageId: {ImageId}", imageId);
 
-            using var originalImageStream = new MemoryStream();
-            using var thumbnailStream = new MemoryStream();
+            var originalImageStream = new MemoryStream();
+            var thumbnailStream = new MemoryStream();
 
             try
             {
@@ -53,19 +54,33 @@ namespace ThumbnailGenerator.Core.Application.Services
                 thumbnailStream.Position = 0; // Reset stream for reading
 
                 // 3. Upload the new thumbnail
-                var thumbnailObjectName = $"thumbnails/{imageId}_thumb.png";
+                var thumbnailObjectName = $"thumbnail-image/{imageId}_{pathSegments[1].Split('_')[1]}_thumb.png";
+
                 _logger.LogInformation("Uploading thumbnail to {ThumbnailName}", thumbnailObjectName);
                 var thumbnailUrl = await _storageService.UploadFileAsync(thumbnailObjectName, thumbnailStream, "image/png");
 
                 // 4. Update the status in ImageAPI
-                _logger.LogInformation("Updating status to Completed for {ImageId} with URL: {Url}", imageId, thumbnailUrl);
-                await _imageApiClient.UpdateThumbnailStatusAsync(imageId, ThumbnailUpdateStatus.Completed, thumbnailUrl);
+                //_logger.LogInformation("Updating status to Completed for {ImageId} with URL: {Url}", imageId, thumbnailUrl);
+
+                UpdateThumbnailImageDto uploadThumbnailImageDto = new UpdateThumbnailImageDto
+                {
+                    ImageId = imageId,
+                    ThumbnailUrl = string.Empty,
+                    Status = ThumbnailUpdateStatus.Completed.ToString()
+                };
+                await _imageApiClient.UpdateThumbnailStatusAsync(uploadThumbnailImageDto, accessToken);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error processing thumbnail for {ImageId}", imageId);
                 // On failure, update the status in ImageAPI
-                await _imageApiClient.UpdateThumbnailStatusAsync(imageId, ThumbnailUpdateStatus.Failed);
+                UpdateThumbnailImageDto uploadThumbnailImageDto = new UpdateThumbnailImageDto
+                {
+                    ImageId = imageId,
+                    Status = ThumbnailUpdateStatus.Completed.ToString(),
+                    ThumbnailUrl = null
+                };
+                await _imageApiClient.UpdateThumbnailStatusAsync(uploadThumbnailImageDto, accessToken);
             }
         }
     }

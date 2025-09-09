@@ -55,7 +55,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "ImageAPI.Core.Application.DTOs.ImageMetadataDto",
+        "Type": "ImageAPI.Core.Application.DTOs.UpdateThumbnailImageDto",
         "IsRequired": true
       }
     ],

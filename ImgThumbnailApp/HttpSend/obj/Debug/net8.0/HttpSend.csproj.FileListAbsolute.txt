@@ -1,0 +1,13 @@
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\HttpSend\obj\Debug\net8.0\HttpSend.csproj.AssemblyReference.cache
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\HttpSend\obj\Debug\net8.0\HttpSend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\HttpSend\obj\Debug\net8.0\HttpSend.AssemblyInfoInputs.cache
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\HttpSend\obj\Debug\net8.0\HttpSend.AssemblyInfo.cs
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\HttpSend\obj\Debug\net8.0\HttpSend.csproj.CoreCompileInputs.cache
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\HttpSend\obj\Debug\net8.0\HttpSend.sourcelink.json
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\HttpSend\bin\Debug\net8.0\HttpSend.deps.json
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\HttpSend\bin\Debug\net8.0\HttpSend.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\HttpSend\bin\Debug\net8.0\HttpSend.pdb
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\HttpSend\obj\Debug\net8.0\HttpSend.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\HttpSend\obj\Debug\net8.0\refint\HttpSend.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\HttpSend\obj\Debug\net8.0\HttpSend.pdb
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\HttpSend\obj\Debug\net8.0\ref\HttpSend.dll

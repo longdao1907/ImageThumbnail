@@ -13,11 +13,12 @@ namespace ImageAPI.Infrastructure.Persistence.Repositories
             _context = context;
         }
 
-        public async Task AddAsync(ImageMetadata metadata)
+        public async Task<ImageMetadata> AddAsync(ImageMetadata metadata)
         {
             metadata.UploadDate = metadata.UploadDate.ToUniversalTime();
             await _context.ImageMetadata.AddAsync(metadata);
             await _context.SaveChangesAsync();
+            return metadata;
         }
 
         public async Task<ImageMetadata?> GetByIdAsync(Guid id)

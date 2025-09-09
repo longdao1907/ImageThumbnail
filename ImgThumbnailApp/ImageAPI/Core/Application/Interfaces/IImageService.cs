@@ -8,7 +8,7 @@ namespace ImageAPI.Core.Application.Interfaces
         Task<IEnumerable<ImageMetadataDto>> GetImagesForUserAsync(string userId);
         Task<IEnumerable<ImageMetadataDto>> GetImagesAsync();
 
-        Task UpdateImageAsync(ImageMetadataDto imageMetadata);
+        Task UpdateImageAsync(UpdateThumbnailImageDto updateThumbnailImageDto);
 
     }
 }

@@ -1,5 +1,7 @@
-﻿using System.Text;
+﻿using System.Net.Http.Headers;
+using System.Text;
 using System.Text.Json;
+using ThumbnailGenerator.Core.Application.DTOs;
 using ThumbnailGenerator.Core.Application.Interfaces;
 
 namespace ThumbnailGenerator.Infrastructure.APIClients
@@ -9,22 +11,23 @@ namespace ThumbnailGenerator.Infrastructure.APIClients
         private readonly HttpClient _httpClient;
 
         // This record is a private DTO for the PATCH request
-        private record UpdateThumbnailRequest(string ThumbnailUrl, string Status);
+
 
         public ImageApiClient(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }
 
-        public async Task UpdateThumbnailStatusAsync(Guid imageId, ThumbnailUpdateStatus status, string? thumbnailUrl = null)
+        public async Task UpdateThumbnailStatusAsync(UpdateThumbnailImageDto updateThumbnailImageDto, String accessToken)
         {
-            var requestBody = new UpdateThumbnailRequest(thumbnailUrl ?? "", status.ToString());
-            var content = new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json");
 
-            // Assumes an endpoint like: PATCH /api/images/{imageId}/thumbnail-status
-            var response = await _httpClient.PatchAsync($"api/image/{imageId}/thumbnail-status", content);
+            var request = new HttpRequestMessage(HttpMethod.Put, "/api/Image/update-image");
+            
+            request.Content = new StringContent(JsonSerializer.Serialize(updateThumbnailImageDto), Encoding.UTF8, "application/json"); ;
 
-            response.EnsureSuccessStatusCode();
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+
+            var response = await _httpClient.SendAsync(request);
         }
     }
 }

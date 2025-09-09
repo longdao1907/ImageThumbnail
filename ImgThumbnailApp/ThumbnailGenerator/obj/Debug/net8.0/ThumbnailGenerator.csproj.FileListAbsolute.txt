@@ -74,3 +74,13 @@ C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenera
 C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\obj\Debug\net8.0\ThumbnailGenerator.pdb
 C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\obj\Debug\net8.0\ThumbnailGenerator.genruntimeconfig.cache
 C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\obj\Debug\net8.0\ref\ThumbnailGenerator.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\bin\Debug\net8.0\CloudNative.CloudEvents.NewtonsoftJson.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\bin\Debug\net8.0\CloudNative.CloudEvents.SystemTextJson.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\letin\OneDrive\Documents\ImageThumbnail\ImgThumbnailApp\ThumbnailGenerator\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

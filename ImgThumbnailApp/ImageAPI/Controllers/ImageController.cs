@@ -90,7 +90,7 @@ namespace ImageAPI.Controllers
 
         [HttpPut]
         [Route("update-image")]
-        public async Task<ResponseDto> Put([FromBody] ImageMetadataDto request)
+        public async Task<ResponseDto> Put(UpdateThumbnailImageDto request )
         {
             try
             {

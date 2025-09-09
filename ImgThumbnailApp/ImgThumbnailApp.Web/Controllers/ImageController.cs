@@ -1,6 +1,7 @@
 ﻿using ImgThumbnailApp.Web.Models;
 using ImgThumbnailApp.Web.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
+using System.IdentityModel.Tokens.Jwt;
 using System.Text.Json;
 
 namespace ImgThumbnailApp.Web.Controllers
@@ -17,7 +18,9 @@ namespace ImgThumbnailApp.Web.Controllers
         {
             List<ImageMetadataDto>? list = new();
 
-            ResponseDto response = await _imageService.GetImagesAsync();
+            string userId = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?.FirstOrDefault()?.Value;
+
+            ResponseDto response = await _imageService.GetImagesForUserAsync(userId);
 
             if (response != null && response.IsSuccess)
             {
@@ -43,17 +46,18 @@ namespace ImgThumbnailApp.Web.Controllers
                 return View();
             }
 
+            string userId = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?.FirstOrDefault()?.Value;
+
             // Basic metadata (adjust as needed)
             var metadata = new ImageMetadataDto
             {
                 Id = Guid.NewGuid(),
-                FileName = Path.GetFileNameWithoutExtension(file.FileName),
+                FileName = Path.GetFileName(file.FileName),
                 FileSize = file.Length,
                 UploadDate = DateTime.UtcNow.ToUniversalTime(),
                 ContentType = file.ContentType,
                 Status = "Pending",
-                UserId = string.Empty,
-                // You might later generate GcsObjectName after uploading to storage
+                UserId = userId,
                 GcsObjectName = Guid.NewGuid().ToString(),
                 OriginalImageFile = file
             };
@@ -63,9 +67,11 @@ namespace ImgThumbnailApp.Web.Controllers
             if (response == null || !response.IsSuccess)
             {
                 ModelState.AddModelError(string.Empty, response?.Message ?? "Upload failed.");
+                TempData["error"] = response.Message;
                 return View();
             }
 
+            TempData["success"] = "Successfully Uploaded";
             return RedirectToAction(nameof(ImageIndex));
         }
     }

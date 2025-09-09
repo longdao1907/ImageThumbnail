@@ -1,24 +1,27 @@
+using CloudNative.CloudEvents.AspNetCore;
+using CloudNative.CloudEvents.NewtonsoftJson;
+using ImageAPI;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.OpenApi.Models;
+using ThumbnailGenerator;
 using ThumbnailGenerator.Core.Application.Interfaces;
 using ThumbnailGenerator.Core.Application.Services;
 using ThumbnailGenerator.Infrastructure.APIClients;
-using ThumbnailGenerator.Infrastructure.Kms;
 using ThumbnailGenerator.Infrastructure.Services;
-using CloudNative.CloudEvents.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // 1. Add services to the container.
 
 // Register application and infrastructure services for DI
-builder.Services.AddSingleton<IStorageService, GcsStorageService>();
-builder.Services.AddSingleton<IImageProcessor, ImageSharpProcessor>();
-builder.Services.AddSingleton<IKmsService, KmsService>();
-builder.Services.AddScoped<ThumbnailService>();
+builder.Services.AddScoped<IStorageService, GcsStorageService>();
+builder.Services.AddScoped<IImageProcessor, ImageSharpProcessor>();
+builder.Services.AddScoped<IThumbnailService, ThumbnailService>();
 
 // Configure a typed HttpClient for the ImageApiClient
 builder.Services.AddHttpClient<IImageApiClient, ImageApiClient>(client =>
 {
-    var baseUrl = builder.Configuration["ImageApi:BaseUrl"];
+    var baseUrl = builder.Configuration["ServiceUrls:ImageAPI"];
     if (string.IsNullOrEmpty(baseUrl))
     {
         throw new InvalidOperationException("ImageApi:BaseUrl is not configured.");
@@ -26,12 +29,36 @@ builder.Services.AddHttpClient<IImageApiClient, ImageApiClient>(client =>
     client.BaseAddress = new Uri(baseUrl);
 });
 
-builder.Services.AddControllers();
-// Add the CloudEvents middleware to automatically parse incoming request
-
+builder.Services.AddControllers(opts =>
+    opts.InputFormatters.Insert(0, new CloudEventJsonInputFormatter(new JsonEventFormatter())));
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(option =>
+{
+    option.AddSecurityDefinition(name: JwtBearerDefaults.AuthenticationScheme, securityScheme: new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Description = "Enter the Bearer Authorization string as following: `Bearer Generated-JWT-Token`",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer"
+    });
+    option.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference= new OpenApiReference
+                {
+                    Type=ReferenceType.SecurityScheme,
+                    Id=JwtBearerDefaults.AuthenticationScheme
+                }
+            }, new string[]{}
+        }
+    });
+});
+builder.AddAppAuthetication();
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
@@ -42,14 +69,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Add authentication and authorization middleware
+app.UseAuthentication();
+app.UseAuthorization();
+
 app.UseHttpsRedirection();
 
-// The CloudEvents middleware needs to be registered before routing
-//app.UseCloudEvents();
-
 app.MapControllers();
-
-// Map a default endpoint for health checks (required by some cloud providers)
-app.MapGet("/", () => "ThumbnailGenerator is healthy.");
 
 app.Run();
