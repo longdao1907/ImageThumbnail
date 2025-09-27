@@ -1,0 +1,45 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: api-with-proxy
+  annotations:
+    run.googleapis.com/ingress: all
+spec:
+  template:
+    metadata:
+      annotations:
+        run.googleapis.com/execution-environment: gen2
+    spec:
+      serviceAccountName: imgthumb-app-signer@durable-sky-471008-q2.iam.gserviceaccount.com
+      containers:
+      - name: app
+        image: asia-southeast1-docker.pkg.dev/durable-sky-471008-q2/app/image-thumbnail-api:latest
+        ports:
+        - containerPort: 8080
+        env:
+        # - name: DATABASE_URL
+          # value: "postgresql://DB_USER:DB_PASSWORD@127.0.0.1:5432/DB_NAME?sslmode=disable"
+        # Hoặc tách từng biến:
+        - name: db_host
+          value: "127.0.0.1"
+        - name: db_port
+          value: "5432"
+        - name: db_name
+          value: "Prob_Image"
+        - name: db_user
+          value: "postgres"
+        - name: db_password
+          value: "Admin@123"
+      - name: cloud-sql-proxy
+        image: gcr.io/cloud-sql-connectors/cloud-sql-proxy:2.11.4
+        args:
+        - "--structured-logs"
+        - "--port=5432"
+        # Bắt buộc: connection name của instance
+        - durable-sky-471008-q2:us-central1:my-first-postgresql
+        # Nếu dùng IAM Database Auth (tùy chọn cho Postgres):
+        # - "--auto-iam-authn"
+        resources:
+          limits:
+            cpu: "0.5"
+            memory: "256Mi"

@@ -3,22 +3,22 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "ThumbnailGenerator\\ThumbnailGenerator.csproj",
+        "Path": "..\\..\\image-thumbnail-web\\ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj",
         "Action": "Start",
         "DebugTarget": "IIS Express"
       },
       {
-        "Path": "ImageAPI\\ImageAPI.csproj",
+        "Path": "..\\..\\image-thumbnail-api\\ImageAPI\\ImageAPI.csproj",
         "Action": "Start",
         "DebugTarget": "IIS Express"
       },
       {
-        "Path": "AuthAPI\\AuthAPI.csproj",
+        "Path": "..\\..\\image-thumbnail-auth\\AuthAPI\\AuthAPI.csproj",
         "Action": "Start",
         "DebugTarget": "IIS Express"
       },
       {
-        "Path": "ImgThumbnailApp.Web\\ImgThumbnailApp.Web.csproj",
+        "Path": "..\\..\\image-thumbnail-thumbgen\\ThumbnailGenerator\\ThumbnailGenerator.csproj",
         "Action": "Start",
         "DebugTarget": "IIS Express"
       }
